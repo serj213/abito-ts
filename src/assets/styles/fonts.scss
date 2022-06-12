@@ -1,0 +1,47 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url("../../../public/fonts/OpenSans-Regular.woff2") format("woff2"), url("../../../public/fonts/OpenSans-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../../../public/fonts/Inter-Regular.woff2") format("woff2"), url("../../../public/fonts/Inter-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../../../public/fonts/Inter-Medium.woff2") format("woff2"), url("../../../public/fonts/Inter-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../../../public/fonts/Roboto-Regular.woff2") format("woff2"), url("../../../public/fonts/Roboto-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../../../public/fonts/Inter-ExtraBold.woff2") format("woff2"), url("../../../public/fonts/Inter-ExtraBold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("../../../public/fonts/OpenSans-ExtraBoldItalic.woff2") format("woff2"), url("../../../public/fonts/OpenSans-ExtraBoldItalic.woff") format("woff");
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}

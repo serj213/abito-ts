@@ -1,0 +1,197 @@
+@import "../../../assets/styles/vars.scss";
+
+.headerTop {
+    position: relative;
+    background-color: $successPressed;
+    z-index: 2;
+    &__inner {
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__link {
+        font-size: 12px;
+        line-height: calc(16 / 12 * 100%);
+        color: $white;
+        transition: color 0.2s linear;
+        @media (any-hover: hover) {
+            &:hover {
+                color: $neutral200;
+            }
+        }
+    }
+
+    &__link + &__link {
+        margin-left: 32px;
+    }
+
+    .header-top-right {
+        display: flex;
+        align-items: center;
+
+        &__favorite,
+        &__annunciation,
+        &__messages {
+            svg {
+                position: relative;
+                top: 2px;
+                width: 24px;
+                height: 24px;
+                path {
+                    stroke: $neutral300;
+                    transition: stroke 0.3s linear;
+                }
+            }
+            @media (any-hover: hover) {
+                &:hover {
+                    svg {
+                        path {
+                            stroke: $white;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__annunciation {
+            position: relative;
+            margin: 0 16px;
+        }
+
+        &__authorized {
+            display: none;
+        }
+
+        &__annunciation-counter {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $dangerFocus;
+            border-radius: 50%;
+            border: 2px solid #040f49;
+            span {
+                font-size: 6px;
+                font-weight: 500;
+                color: $white;
+            }
+        }
+
+        &__entrance {
+            font-size: 12px;
+            line-height: calc(16 / 12 * 100%);
+            color: $white;
+            margin: 0 16px;
+            transition: color 0.2s linear;
+            @media (any-hover: hover) {
+                &:hover {
+                    color: $neutral200;
+                }
+            }
+        }
+
+        &__advertisement-add {
+            color: $white;
+            padding: 8px 12px;
+            background-color: $successFocus;
+            border-radius: 5px;
+            transition: background-color 0.2s linear;
+            @media (any-hover: hover) {
+                &:hover {
+                    background-color: #5b7f6f;
+                }
+            }
+        }
+    }
+}
+
+
+.headerRight {
+    display: flex;
+    align-items: center;
+
+    &__favorite,
+    &__annunciation,
+    &__messages {
+        svg {
+            position: relative;
+            top: 2px;
+            width: 24px;
+            height: 24px;
+            path {
+                stroke: $neutral300;
+                transition: stroke 0.3s linear;
+            }
+        }
+        @media (any-hover: hover) {
+            &:hover {
+                svg {
+                    path {
+                        stroke: $white;
+                    }
+                }
+            }
+        }
+    }
+
+    &__annunciation {
+        position: relative;
+        margin: 0 16px;
+    }
+
+    &__authorized {
+        display: none;
+    }
+
+    &__annunciation-counter {
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $dangerFocus;
+        border-radius: 50%;
+        border: 2px solid #040f49;
+        span {
+            font-size: 6px;
+            font-weight: 500;
+            color: $white;
+        }
+    }
+
+    &__entrance {
+        font-size: 12px;
+        line-height: calc(16 / 12 * 100%);
+        color: $white;
+        margin: 0 16px;
+        transition: color 0.2s linear;
+        @media (any-hover: hover) {
+            &:hover {
+                color: $neutral200;
+            }
+        }
+    }
+
+    &__advertisementAdd {
+        color: $white;
+        padding: 8px 12px;
+        background-color: $successFocus;
+        border-radius: 5px;
+        border: none;
+        transition: background-color 0.2s linear;
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: #5b7f6f;
+            }
+        }
+    }
+}

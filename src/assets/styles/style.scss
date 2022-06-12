@@ -1,0 +1,34 @@
+@import "vars";
+@import "fonts";
+@import "reset";
+@import "global";
+
+// ======== header ========
+
+@import "./modules/header.scss";
+
+// ===== main-page ==========
+
+@import "./modules/main-page.scss";
+
+// ====== search-page ========
+
+@import "./modules/search-page.scss";
+
+// ====== cart-product ========
+
+@import "./modules/cart-product.scss";
+
+
+// ======== lk =====================
+
+@import './modules/lk/styles.scss';
+
+
+// ================================
+
+@import './modules/registr.scss';
+
+// ======= footer ============
+
+@import "./modules/footer.scss";

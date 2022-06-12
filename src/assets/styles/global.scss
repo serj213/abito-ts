@@ -1,0 +1,20 @@
+@import "./vars.scss";
+@import "./breakpoints.scss";
+
+html {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: $inter;
+    font-weight: 400;
+    font-size: $fz12;
+    line-height: calc(16 / 12 * 100%);
+    color: $neutral600;
+    background-color: $bg;
+}
+
+

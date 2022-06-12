@@ -1,0 +1,16 @@
+@import "../../../assets/styles/vars.scss";
+
+.notAuthorized {
+    &__entrance {
+        font-size: 12px;
+        line-height: calc(16 / 12 * 100%);
+        color: $white;
+        margin: 0 16px;
+        transition: color 0.2s linear;
+        @media (any-hover: hover) {
+            &:hover {
+                color: $neutral200;
+            }
+        }
+    }
+}

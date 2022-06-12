@@ -1,0 +1,29 @@
+@import '../../assets/styles/vars.scss';
+
+.headerTop {
+    position: relative;
+    background-color: $successPressed;
+    z-index: 2;
+    &__inner {
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__link {
+        font-size: 12px;
+        line-height: calc(16 / 12 * 100%);
+        color: $white;
+        transition: color 0.2s linear;
+        @media (any-hover: hover) {
+            &:hover {
+                color: $neutral200;
+            }
+        }
+    }
+
+    &__link + &__link {
+        margin-left: 32px;
+    }
+}
