@@ -1,0 +1,193 @@
+@import "../../../assets//styles/vars.scss";
+@import "../../../assets/styles/breakpoints.scss";
+
+.headerFilter {
+    &__inner {
+        height: 161px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__category {
+        display: flex;
+        align-items: flex-end;
+        margin: 0 0 18px;
+    }
+
+    &__logo {
+        margin-right: 30px;
+        img {
+            width: 122px;
+            height: 28px;
+            object-fit: contain;
+        }
+    }
+
+    &__link-category {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: calc(16 / 12 * 100%);
+        color: $gray800;
+        transition: 0.3s linear;
+        @media (any-hover: hover) {
+            &:hover {
+                color: $black;
+            }
+        }
+    }
+
+    &__link-category + &__link-category {
+        margin-left: 16px;
+    }
+
+    &__filters {
+        display: flex;
+        border: 1px solid $successHover;
+        border-radius: 5px;
+        height: 32px;
+        align-items: center;
+        margin: 0 0 7px;
+    }
+
+    &__select {
+        position: relative;
+        // border-radius: 5px 0px 0px 5px;
+        select {
+            border: none;
+            background-color: transparent;
+            padding: 8px 35px 8px 16px;
+            font-family: inherit;
+            appearance: none;
+            cursor: pointer;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            width: 8px;
+            height: 4px;
+            right: 18px;
+            top: 14px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-image: url("../../../assets/images/header/header-filters/arrow-select.svg");
+            z-index: 1;
+        }
+    }
+
+    &__search-input {
+        height: 100%;
+        border-left: 1px solid $neutral200;
+        border-right: 1px solid $successHover;
+        flex: 0 0 calc(477 / 1088 * 100%);
+
+        @media (max-width: $tabletBig) {
+            flex: 0 0 35%;
+        }
+        input {
+            padding: 0 16px;
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            color: $black;
+            font-size: 12px;
+            line-height: calc(16 / 12 * 100%);
+            &::placeholder {
+                color: $neutral500;
+            }
+        }
+    }
+
+    &__region,
+    &__radius {
+        flex: 0 1 185px;
+        height: 100%;
+        @media (max-width: $tabletBig) {
+            flex: 1 1 200px;
+        }
+        button {
+            position: relative;
+            width: 100%;
+            font-size: 12px;
+            line-height: calc(16 / 12 * 100%);
+            color: $neutral800;
+            display: inline-block;
+            height: 100%;
+            background-color: transparent;
+            text-align: left;
+            padding: 0 30px 0 20px;
+            transition: color 0.3s linear;
+            @media (any-hover: hover) {
+                &:hover {
+                    color: $black;
+                }
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 8px;
+                height: 4px;
+                top: 14px;
+                right: 30px;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-image: url("../../../assets/images/header/header-filters/arrow-select.svg");
+                z-index: 1;
+
+                @media (max-width: $tabletBig) {
+                    right: 15px;
+                }
+            }
+        }
+    }
+
+    &__region {
+        border-right: 1px solid $successHover;
+    }
+
+    &__btn-search {
+        display: block;
+        background-color: $successHover;
+        flex: 0 0 77px;
+        width: 100%;
+        font-size: 12px;
+        line-height: calc(16 / 12 * 100%);
+        height: 100%;
+        color: $white;
+        transition: background-color 0.3s linear;
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: #099153;
+            }
+        }
+    }
+
+    &__checkboxes {
+        display: flex;
+    }
+
+    &__checkbox {
+        display: flex;
+        align-items: center;
+        flex: 0 0 166px;
+        input {
+            border: 1px solid #c2c2c2;
+            border-radius: 4px;
+            flex: 0 0 20px;
+            height: 20px;
+        }
+
+        label {
+            margin-left: 8px;
+            font-size: 12px;
+            line-height: calc(16 / 12 * 100%);
+            color: $gray0290;
+            width: 100%;
+        }
+    }
+
+    &__checkbox + &__checkbox {
+        margin-left: 10px;
+    }
+}
